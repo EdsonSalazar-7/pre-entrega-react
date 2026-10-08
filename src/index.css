@@ -180,6 +180,72 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.formulario {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background-color: #1f2937;
+}
+
+.formulario h2 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.formulario-producto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formulario-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.formulario-campo input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background-color: #111827;
+  color: #f9fafb;
+  font-size: 1rem;
+}
+
+.formulario-campo input::placeholder {
+  color: #6b7280;
+}
+
+.formulario-imagen-nombre,
+.formulario-aclaracion {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.formulario-imagen-nombre {
+  color: #38bdf8;
+}
+
+.formulario-boton {
+  grid-column: 1 / -1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #f9fafb;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formulario-aclaracion {
+  grid-column: 1 / -1;
+}
+
 .footer {
   padding: 1.5rem;
   background-color: #0b1220;
@@ -252,6 +318,10 @@ a:hover {
   }
 
   .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-producto {
     grid-template-columns: 1fr;
   }
 }

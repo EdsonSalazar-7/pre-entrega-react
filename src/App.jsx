@@ -1,3 +1,4 @@
+import FormularioContainer from './components/FormularioContainer.jsx'
 import ItemListContainer from './components/ItemListContainer.jsx'
 import Layout from './components/Layout.jsx'
 
@@ -12,6 +13,7 @@ function App() {
         </p>
       </section>
       <ItemListContainer />
+      <FormularioContainer />
     </Layout>
   )
 }
