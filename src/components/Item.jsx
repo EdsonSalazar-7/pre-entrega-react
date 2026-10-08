@@ -31,6 +31,7 @@ function Item({ producto }) {
           className="cantidad-boton"
           onClick={disminuirCantidad}
           disabled={cantidad === 0}
+          aria-label={`Disminuir cantidad de ${producto.nombre}`}
         >
           −
         </button>
@@ -40,6 +41,7 @@ function Item({ producto }) {
           className="cantidad-boton"
           onClick={aumentarCantidad}
           disabled={cantidad === producto.stock}
+          aria-label={`Aumentar cantidad de ${producto.nombre}`}
         >
           +
         </button>
