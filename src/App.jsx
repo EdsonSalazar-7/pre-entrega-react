@@ -1,9 +1,16 @@
+import Layout from './components/Layout.jsx'
+
 function App() {
   return (
-    <main>
-      <h1>Pre-entrega React</h1>
-      <p>Base limpia lista para la etapa 1.</p>
-    </main>
+    <Layout>
+      <section className="welcome" id="inicio">
+        <h2>Bienvenido a NexaTech Gaming</h2>
+        <p>
+          Esta es la estructura base del sitio. En las próximas etapas se
+          agregará el catálogo de productos.
+        </p>
+      </section>
+    </Layout>
   )
 }
 
