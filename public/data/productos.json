@@ -1,0 +1,72 @@
+[
+  {
+    "id": "notebook-gamer",
+    "nombre": "Notebook Gamer",
+    "precio": 1899999,
+    "stock": 5,
+    "imagen": "https://picsum.photos/seed/notebook-gamer/400/300"
+  },
+  {
+    "id": "monitor-gamer",
+    "nombre": "Monitor Gamer",
+    "precio": 649999,
+    "stock": 8,
+    "imagen": "https://picsum.photos/seed/monitor-gamer/400/300"
+  },
+  {
+    "id": "teclado-mecanico",
+    "nombre": "Teclado Mecánico",
+    "precio": 129999,
+    "stock": 15,
+    "imagen": "https://picsum.photos/seed/teclado-mecanico/400/300"
+  },
+  {
+    "id": "mouse-gamer",
+    "nombre": "Mouse Gamer",
+    "precio": 79999,
+    "stock": 20,
+    "imagen": "https://picsum.photos/seed/mouse-gamer/400/300"
+  },
+  {
+    "id": "auriculares-bluetooth",
+    "nombre": "Auriculares Bluetooth",
+    "precio": 159999,
+    "stock": 12,
+    "imagen": "https://picsum.photos/seed/auriculares-bluetooth/400/300"
+  },
+  {
+    "id": "webcam-hd",
+    "nombre": "Webcam HD",
+    "precio": 89999,
+    "stock": 10,
+    "imagen": "https://picsum.photos/seed/webcam-hd/400/300"
+  },
+  {
+    "id": "microfono-usb",
+    "nombre": "Micrófono USB",
+    "precio": 119999,
+    "stock": 7,
+    "imagen": "https://picsum.photos/seed/microfono-usb/400/300"
+  },
+  {
+    "id": "ssd-externo",
+    "nombre": "SSD Externo",
+    "precio": 199999,
+    "stock": 9,
+    "imagen": "https://picsum.photos/seed/ssd-externo/400/300"
+  },
+  {
+    "id": "parlante-bluetooth",
+    "nombre": "Parlante Bluetooth",
+    "precio": 99999,
+    "stock": 14,
+    "imagen": "https://picsum.photos/seed/parlante-bluetooth/400/300"
+  },
+  {
+    "id": "soporte-notebook",
+    "nombre": "Soporte para Notebook",
+    "precio": 49999,
+    "stock": 25,
+    "imagen": "https://picsum.photos/seed/soporte-notebook/400/300"
+  }
+]

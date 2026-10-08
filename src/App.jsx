@@ -1,3 +1,4 @@
+import ItemListContainer from './components/ItemListContainer.jsx'
 import Layout from './components/Layout.jsx'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
           agregará el catálogo de productos.
         </p>
       </section>
+      <ItemListContainer />
     </Layout>
   )
 }
