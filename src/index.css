@@ -125,8 +125,58 @@ a:hover {
 }
 
 .producto-stock {
-  margin: 0;
+  margin: 0 0 0.75rem;
   color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.cantidad-controles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.cantidad-boton {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background-color: #1f2937;
+  color: #f9fafb;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cantidad-boton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cantidad-valor {
+  min-width: 2rem;
+  font-weight: bold;
+}
+
+.agregar-boton {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #f9fafb;
+  cursor: pointer;
+}
+
+.agregar-boton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.agregar-mensaje {
+  margin: 0.75rem 0 0;
+  color: #38bdf8;
   font-size: 0.9rem;
 }
 
