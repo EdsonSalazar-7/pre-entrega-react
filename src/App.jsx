@@ -8,8 +8,8 @@ function App() {
       <section className="welcome" id="inicio">
         <h2>Bienvenido a NexaTech Gaming</h2>
         <p>
-          Esta es la estructura base del sitio. En las próximas etapas se
-          agregará el catálogo de productos.
+          Explorá nuestro catálogo de tecnología y videojuegos, y simulá la
+          carga de un producto desde el formulario.
         </p>
       </section>
       <ItemListContainer />
