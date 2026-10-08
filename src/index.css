@@ -242,6 +242,21 @@ a:hover {
   cursor: pointer;
 }
 
+.formulario-error,
+.formulario-exito {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-weight: bold;
+}
+
+.formulario-error {
+  color: #fca5a5;
+}
+
+.formulario-exito {
+  color: #86efac;
+}
+
 .formulario-aclaracion {
   grid-column: 1 / -1;
 }
