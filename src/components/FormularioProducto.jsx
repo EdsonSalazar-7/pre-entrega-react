@@ -1,6 +1,9 @@
 function FormularioProducto({
   valores,
   imagen,
+  subiendo,
+  error,
+  exito,
   onCambiarCampo,
   onCambiarImagen,
   onEnviar,
@@ -72,12 +75,16 @@ function FormularioProducto({
         </p>
       )}
 
-      <button type="submit" className="formulario-boton">
-        Guardar producto
+      <button type="submit" className="formulario-boton" disabled={subiendo}>
+        {subiendo ? 'Subiendo imagen...' : 'Guardar producto'}
       </button>
+
+      {error !== '' && <p className="formulario-error">{error}</p>}
+      {exito !== '' && <p className="formulario-exito">{exito}</p>}
+
       <p className="formulario-aclaracion">
-        La imagen se subirá en la Etapa 6. Por ahora solo queda guardada en el
-        formulario.
+        Al guardar, la imagen se sube a ImgBB y los datos completos solo se
+        muestran por consola.
       </p>
     </form>
   )
