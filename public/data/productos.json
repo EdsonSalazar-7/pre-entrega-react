@@ -1,0 +1,86 @@
+[
+  {
+    "id": "notebook-gamer",
+    "nombre": "Notebook Gamer ASUS ROG Strix G16",
+    "precio": 1899999,
+    "stock": 5,
+    "imagen": "/images/productos/notebook-gamer-asus-rog-strix-g16.webp"
+  },
+  {
+    "id": "monitor-gamer",
+    "nombre": "Monitor Gamer Dell",
+    "precio": 649999,
+    "stock": 8,
+    "imagen": "/images/productos/monitor-gamer-dell.webp"
+  },
+  {
+    "id": "teclado-mecanico",
+    "nombre": "Teclado Mecánico Razer BlackWidow",
+    "precio": 129999,
+    "stock": 15,
+    "imagen": "/images/productos/teclado-mecanico-razer-blackwidow.webp"
+  },
+  {
+    "id": "mouse-gamer",
+    "nombre": "Mouse Gamer Logitech G502 Hero",
+    "precio": 79999,
+    "stock": 20,
+    "imagen": "/images/productos/mouse-gamer-logitech-g502-hero.webp"
+  },
+  {
+    "id": "auriculares-bluetooth",
+    "nombre": "Auriculares Bluetooth Bose QuietComfort 35 II",
+    "precio": 159999,
+    "stock": 12,
+    "imagen": "/images/productos/auriculares-bluetooth-bose-quiet-comfort-35-ii.webp"
+  },
+  {
+    "id": "webcam-hd",
+    "nombre": "Webcam HD Logitech C920",
+    "precio": 89999,
+    "stock": 10,
+    "imagen": "/images/productos/webcam-hd-logitech-c920.webp"
+  },
+  {
+    "id": "microfono-usb",
+    "nombre": "Micrófono USB Blue Yeti",
+    "precio": 119999,
+    "stock": 7,
+    "imagen": "/images/productos/microfono-usb-blue-yeti.webp"
+  },
+  {
+    "id": "ssd-externo",
+    "nombre": "SSD Externo Samsung T5",
+    "precio": 199999,
+    "stock": 9,
+    "imagen": "/images/productos/ssd-externo-samsung-t5.webp"
+  },
+  {
+    "id": "parlante-bluetooth",
+    "nombre": "Parlante Bluetooth JBL",
+    "precio": 99999,
+    "stock": 14,
+    "imagen": "/images/productos/parlante-bluetooth.jpg"
+  },
+  {
+    "id": "soporte-notebook",
+    "nombre": "Soporte para Notebook Trust",
+    "precio": 49999,
+    "stock": 25,
+    "imagen": "/images/productos/soporte-para-notebook-trust.webp"
+  },
+  {
+    "id": "control-xbox",
+    "nombre": "Control Xbox Elite Series 2",
+    "precio": 349999,
+    "stock": 6,
+    "imagen": "/images/productos/control-xbox-elite-series-2.webp"
+  },
+  {
+    "id": "silla-gamer",
+    "nombre": "Silla Gamer Autofull",
+    "precio": 499999,
+    "stock": 4,
+    "imagen": "/images/productos/silla-gamer-autofull.webp"
+  }
+]

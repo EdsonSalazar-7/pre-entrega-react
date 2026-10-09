@@ -1,0 +1,83 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 24rem;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  border: 1px solid #7c3aed;
+  border-radius: 8px;
+  background-color: #0b0e14;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #f3f4f6;
+  font-size: 0.9rem;
+}
+
+.campo input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2a3350;
+  border-radius: 8px;
+  background-color: #151b26;
+  color: #f3f4f6;
+  font-size: 1rem;
+}
+
+.campo input::placeholder {
+  color: #6b7280;
+}
+
+.campo input:focus {
+  outline: 2px solid #22d3ee;
+  outline-offset: 1px;
+  border-color: #22d3ee;
+}
+
+.imagenNombre {
+  margin: 0;
+  color: #22d3ee;
+  font-size: 0.9rem;
+}
+
+.boton {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #7c3aed;
+  color: #f3f4f6;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #8b5cf6;
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error,
+.exito {
+  margin: 0;
+  font-weight: bold;
+}
+
+.error {
+  color: #fca5a5;
+}
+
+.exito {
+  color: #86efac;
+}
+
+.aclaracion {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
