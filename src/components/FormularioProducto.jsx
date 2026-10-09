@@ -19,6 +19,7 @@ function FormularioProducto({
           value={valores.id}
           onChange={onCambiarCampo}
           placeholder="Ej: 7"
+          required
         />
       </label>
 
@@ -31,6 +32,7 @@ function FormularioProducto({
           value={valores.nombre}
           onChange={onCambiarCampo}
           placeholder="Ej: Teclado gamer"
+          required
         />
       </label>
 
@@ -43,6 +45,8 @@ function FormularioProducto({
           value={valores.precio}
           onChange={onCambiarCampo}
           placeholder="Ej: 25000"
+          min="0"
+          required
         />
       </label>
 
@@ -55,6 +59,8 @@ function FormularioProducto({
           value={valores.stock}
           onChange={onCambiarCampo}
           placeholder="Ej: 10"
+          min="0"
+          required
         />
       </label>
 
@@ -66,6 +72,7 @@ function FormularioProducto({
           type="file"
           accept="image/*"
           onChange={onCambiarImagen}
+          required
         />
       </label>
 
