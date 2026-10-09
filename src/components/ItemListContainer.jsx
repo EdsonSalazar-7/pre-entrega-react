@@ -45,7 +45,11 @@ function ItemListContainer() {
   return (
     <section className="catalogo" id="catalogo">
       <h2>Catálogo de productos</h2>
-      <ItemList productos={productos} />
+      {productos.length === 0 ? (
+        <p>No hay productos disponibles por el momento.</p>
+      ) : (
+        <ItemList productos={productos} />
+      )}
     </section>
   )
 }

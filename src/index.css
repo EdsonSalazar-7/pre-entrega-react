@@ -7,17 +7,18 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #111827;
-  color: #f9fafb;
+  background-color: #0b0e14;
+  color: #f3f4f6;
 }
 
 a {
-  color: #f9fafb;
+  color: #f3f4f6;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #38bdf8;
+  color: #22d3ee;
 }
 
 .layout {
@@ -31,15 +32,16 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background-color: #111827;
-  border-bottom: 2px solid #2563eb;
+  background-color: #0b0e14;
+  border-bottom: 2px solid #7c3aed;
 }
 
 .logo {
   margin: 0;
   font-size: 1.25rem;
   font-weight: bold;
-  color: #38bdf8;
+  color: #22d3ee;
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
 }
 
 .nav-list {
@@ -53,39 +55,23 @@ a:hover {
 .content {
   flex: 1;
   width: 100%;
-  max-width: 960px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-}
-
-.welcome {
-  padding: 1.5rem;
-  border: 1px solid #2563eb;
-  border-radius: 8px;
-  background-color: #1f2937;
-}
-
-.welcome h2 {
-  margin-top: 0;
-  color: #38bdf8;
-}
-
-.welcome p {
-  color: #9ca3af;
-  line-height: 1.6;
 }
 
 .catalogo {
   margin-top: 2rem;
   padding: 1.5rem;
-  border: 1px solid #2563eb;
+  border: 1px solid #7c3aed;
   border-radius: 8px;
-  background-color: #1f2937;
+  background-color: #151b26;
 }
 
 .catalogo h2 {
-  margin-top: 0;
-  color: #38bdf8;
+  margin: 0 0 1rem;
+  text-align: center;
+  color: #22d3ee;
 }
 
 .catalogo-error {
@@ -94,22 +80,32 @@ a:hover {
 
 .productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.25rem;
 }
 
 .producto {
   padding: 1rem;
-  border: 1px solid #2563eb;
+  border: 1px solid #2a3350;
   border-radius: 8px;
-  background-color: #111827;
+  background-color: #0b0e14;
   text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.producto:hover {
+  border-color: #22d3ee;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.18);
+  transform: translateY(-2px);
 }
 
 .producto-imagen {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.5rem;
+  background-color: #151b26;
   border-radius: 8px;
 }
 
@@ -120,7 +116,7 @@ a:hover {
 
 .producto-precio {
   margin: 0 0 0.5rem;
-  color: #38bdf8;
+  color: #22d3ee;
   font-weight: bold;
 }
 
@@ -141,12 +137,17 @@ a:hover {
 .cantidad-boton {
   width: 2rem;
   height: 2rem;
-  border: 1px solid #2563eb;
+  border: 1px solid #7c3aed;
   border-radius: 8px;
-  background-color: #1f2937;
-  color: #f9fafb;
+  background-color: #151b26;
+  color: #f3f4f6;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cantidad-boton:hover:not(:disabled) {
+  background-color: #7c3aed;
 }
 
 .cantidad-boton:disabled {
@@ -164,9 +165,14 @@ a:hover {
   padding: 0.5rem;
   border: none;
   border-radius: 8px;
-  background-color: #2563eb;
-  color: #f9fafb;
+  background-color: #7c3aed;
+  color: #f3f4f6;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.agregar-boton:hover:not(:disabled) {
+  background-color: #8b5cf6;
 }
 
 .agregar-boton:disabled {
@@ -176,95 +182,33 @@ a:hover {
 
 .agregar-mensaje {
   margin: 0.75rem 0 0;
-  color: #38bdf8;
+  color: #22d3ee;
   font-size: 0.9rem;
 }
 
 .formulario {
   margin-top: 2rem;
   padding: 1.5rem;
-  border: 1px solid #2563eb;
+  border: 1px solid #7c3aed;
   border-radius: 8px;
-  background-color: #1f2937;
+  background-color: #151b26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formulario h2 {
-  margin-top: 0;
-  color: #38bdf8;
-}
-
-.formulario-producto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.formulario-campo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  color: #f9fafb;
-  font-size: 0.9rem;
-}
-
-.formulario-campo input {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #2563eb;
-  border-radius: 8px;
-  background-color: #111827;
-  color: #f9fafb;
-  font-size: 1rem;
-}
-
-.formulario-campo input::placeholder {
-  color: #6b7280;
-}
-
-.formulario-imagen-nombre,
-.formulario-aclaracion {
-  margin: 0;
-  color: #9ca3af;
-  font-size: 0.9rem;
-}
-
-.formulario-imagen-nombre {
-  color: #38bdf8;
-}
-
-.formulario-boton {
-  grid-column: 1 / -1;
-  padding: 0.6rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #2563eb;
-  color: #f9fafb;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.formulario-error,
-.formulario-exito {
-  grid-column: 1 / -1;
-  margin: 0;
-  font-weight: bold;
-}
-
-.formulario-error {
-  color: #fca5a5;
-}
-
-.formulario-exito {
-  color: #86efac;
-}
-
-.formulario-aclaracion {
-  grid-column: 1 / -1;
+  margin: 0 0 1rem;
+  width: 100%;
+  max-width: 24rem;
+  text-align: center;
+  color: #22d3ee;
 }
 
 .footer {
   padding: 1.5rem;
-  background-color: #0b1220;
-  border-top: 2px solid #2563eb;
+  background-color: #0b0e14;
+  border-top: 2px solid #7c3aed;
   text-align: center;
 }
 
@@ -287,9 +231,15 @@ a:hover {
 .team-card {
   width: 180px;
   padding: 1rem;
-  border: 1px solid #2563eb;
+  border: 1px solid #2a3350;
   border-radius: 8px;
-  background-color: #1f2937;
+  background-color: #151b26;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  border-color: #a78bfa;
+  box-shadow: 0 0 12px rgba(167, 139, 250, 0.22);
 }
 
 .avatar {
@@ -299,8 +249,8 @@ a:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #2563eb;
-  color: #f9fafb;
+  background-color: #7c3aed;
+  color: #f3f4f6;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -314,6 +264,13 @@ a:hover {
   margin: 0;
   color: #9ca3af;
   font-size: 0.9rem;
+}
+
+.team-email {
+  margin: 0.25rem 0 0;
+  color: #22d3ee;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
 }
 
 .footer-copy {
@@ -333,10 +290,6 @@ a:hover {
   }
 
   .productos {
-    grid-template-columns: 1fr;
-  }
-
-  .formulario-producto {
     grid-template-columns: 1fr;
   }
 }

@@ -1,3 +1,5 @@
+import styles from './FormularioProducto.module.css'
+
 function FormularioProducto({
   valores,
   imagen,
@@ -9,8 +11,8 @@ function FormularioProducto({
   onEnviar,
 }) {
   return (
-    <form className="formulario-producto" onSubmit={onEnviar}>
-      <label className="formulario-campo" htmlFor="producto-id">
+    <form className={styles.formulario} onSubmit={onEnviar}>
+      <label className={styles.campo} htmlFor="producto-id">
         Id
         <input
           id="producto-id"
@@ -23,7 +25,7 @@ function FormularioProducto({
         />
       </label>
 
-      <label className="formulario-campo" htmlFor="producto-nombre">
+      <label className={styles.campo} htmlFor="producto-nombre">
         Nombre
         <input
           id="producto-nombre"
@@ -36,7 +38,7 @@ function FormularioProducto({
         />
       </label>
 
-      <label className="formulario-campo" htmlFor="producto-precio">
+      <label className={styles.campo} htmlFor="producto-precio">
         Precio
         <input
           id="producto-precio"
@@ -50,7 +52,7 @@ function FormularioProducto({
         />
       </label>
 
-      <label className="formulario-campo" htmlFor="producto-stock">
+      <label className={styles.campo} htmlFor="producto-stock">
         Stock
         <input
           id="producto-stock"
@@ -64,7 +66,7 @@ function FormularioProducto({
         />
       </label>
 
-      <label className="formulario-campo" htmlFor="producto-imagen">
+      <label className={styles.campo} htmlFor="producto-imagen">
         Imagen
         <input
           id="producto-imagen"
@@ -77,19 +79,19 @@ function FormularioProducto({
       </label>
 
       {imagen !== null && (
-        <p className="formulario-imagen-nombre">
+        <p className={styles.imagenNombre}>
           Imagen seleccionada: {imagen.name}
         </p>
       )}
 
-      <button type="submit" className="formulario-boton" disabled={subiendo}>
+      <button type="submit" className={styles.boton} disabled={subiendo}>
         {subiendo ? 'Subiendo imagen...' : 'Guardar producto'}
       </button>
 
-      {error !== '' && <p className="formulario-error">{error}</p>}
-      {exito !== '' && <p className="formulario-exito">{exito}</p>}
+      {error !== '' && <p className={styles.error}>{error}</p>}
+      {exito !== '' && <p className={styles.exito}>{exito}</p>}
 
-      <p className="formulario-aclaracion">
+      <p className={styles.aclaracion}>
         Al guardar, la imagen se sube a ImgBB y los datos completos solo se
         muestran por consola.
       </p>
